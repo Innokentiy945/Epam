@@ -57,7 +57,7 @@ public class FirstTwoTest {
         String expected = str.substring(0, 3);
 
         //Then
-        assertEquals(actual, expected);
+        assertNotEquals(actual, expected);
     }
 
 }
