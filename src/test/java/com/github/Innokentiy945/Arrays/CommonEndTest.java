@@ -8,7 +8,7 @@ public class CommonEndTest {
     CommonEnd commonEnd = new CommonEnd();
 
     @Test(expected = NullPointerException.class)
-    public void ShouldReturnNullPointerExceptionWhenNull() {
+    public void shouldReturnNullPointerExceptionWhenNull() {
         //Given
         int[] a = null;
         int[] b = null;
@@ -22,7 +22,7 @@ public class CommonEndTest {
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void ShouldReturnOutOfBoundsException() {
+    public void shouldReturnOutOfBoundsException() {
         //Given
         int[] a = {};
         int[] b = {};
@@ -36,7 +36,7 @@ public class CommonEndTest {
     }
 
     @Test
-    public void ShouldReturnTrueWhenFirstElementEquals() {
+    public void shouldReturnTrueWhenFirstElementEquals() {
         //Given
         int[] a = {1, 2, 3};
         int[] b = {1, 5};
@@ -50,7 +50,7 @@ public class CommonEndTest {
     }
 
     @Test
-    public void ShouldReturnFalseWhenLastElementEquals() {
+    public void shouldReturnFalseWhenLastElementEquals() {
         //Given
         int[] a = {1, 2, 3};
         int[] b = {1, 3};
