@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CommonEndTest {
-    CommonEnd commonEnd = new CommonEnd();
+    private CommonEnd commonEnd = new CommonEnd();
 
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
@@ -18,7 +18,7 @@ public class CommonEndTest {
         boolean actual = commonEnd.CommonEnd(a,b);
 
         //Then
-        assertEquals(expected, actual);
+        assertTrue(expected, actual);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -32,7 +32,7 @@ public class CommonEndTest {
         boolean expected = false;
 
         //Then
-        assertNotEquals(actual, expected);
+        assertFalse(actual, expected);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class CommonEndTest {
         boolean expected = a[0] == b[0];
 
         //Then
-        assertEquals(actual, expected);
+        assertTrue(actual, expected);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class CommonEndTest {
         boolean expected = false;
 
         //Then
-        assertEquals(actual, expected);
+        assertTrue(actual, expected);
     }
 
 
