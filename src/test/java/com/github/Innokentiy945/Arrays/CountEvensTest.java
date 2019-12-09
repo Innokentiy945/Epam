@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CountEvensTest {
-    CountEvens countEvens = new CountEvens();
+    private CountEvens countEvens = new CountEvens();
 
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
@@ -17,7 +17,7 @@ public class CountEvensTest {
         int actual = countEvens.countEvens(nums);
 
         //Then
-        assertEquals(expected, actual);
+        assertTrue(expected, actual);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -30,7 +30,7 @@ public class CountEvensTest {
         int actual = countEvens.countEvens(nums);
 
         //Then
-        assertEquals(expected, actual);
+        assertTrue(expected, actual);
     }
 
     @Test
