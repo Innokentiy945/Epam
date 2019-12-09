@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RotateLeft3Test {
-    RotateLeft3 rotateLeft3 = new RotateLeft3();
+    private RotateLeft3 rotateLeft3 = new RotateLeft3();
 
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
@@ -14,7 +14,7 @@ public class RotateLeft3Test {
 
 
         //When
-        boolean expected = false;
+        int expected = 0;
         int[] actual = rotateLeft3.rotateLeft3(nums);
 
         //Then
@@ -28,15 +28,15 @@ public class RotateLeft3Test {
         int[] arr = {};
 
         //When
-        int[] actual = rotateLeft3.rotateLeft3(nums);
+        boolean actual = true;
         boolean expected = arr[0] == nums[6];
         boolean expected1 = arr[1] == nums[4];
         boolean expected2 = arr[2] == nums[5];
 
         //Then
-        assertNotEquals(actual, expected);
-        assertNotEquals(actual, expected1);
-        assertNotEquals(actual, expected2);
+        assertFalse(String.valueOf(actual), expected);
+        assertFalse(String.valueOf(actual), expected1);
+        assertFalse(String.valueOf(actual), expected2);
     }
 
     @Test
@@ -52,9 +52,9 @@ public class RotateLeft3Test {
         boolean expected2 = arr[2] == nums[0];
 
         //Then
-        assertEquals(actual, expected);
-        assertEquals(actual, expected1);
-        assertEquals(actual, expected2);
+        assertFalse(String.valueOf(actual), expected);
+        assertFalse(String.valueOf(actual), expected1);
+        assertFalse(String.valueOf(actual), expected2);
     }
 
 
