@@ -8,7 +8,7 @@ public class CountEvensTest {
     CountEvens countEvens = new CountEvens();
 
     @Test(expected = NullPointerException.class)
-    public void ShouldReturnNullPointerExceptionWhenNull() {
+    public void shouldReturnNullPointerExceptionWhenNull() {
         //Given
         int[] nums = null;
 
@@ -21,7 +21,7 @@ public class CountEvensTest {
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void ShouldReturnOutOfBoundsException() {
+    public void shouldReturnOutOfBoundsException() {
         //Given
         int[] nums = {};
 
@@ -34,7 +34,7 @@ public class CountEvensTest {
     }
 
     @Test
-    public void ShouldReturnRightResult1() {
+    public void shouldReturnRightResult1() {
         //Given
         int[] nums = {2, 2, 0};
 
@@ -47,7 +47,7 @@ public class CountEvensTest {
     }
 
     @Test
-    public void ShouldReturnRightResult2() {
+    public void shouldReturnRightResult2() {
         //Given
         int[] nums = {5, 7, 8, 9, 1, 4, 0};
 
@@ -60,7 +60,7 @@ public class CountEvensTest {
     }
 
     @Test
-    public void ShouldReturnResultWhenArrayEmpty(){
+    public void shouldReturnResultWhenArrayEmpty(){
         //Given
         int[] nums = {};
 
