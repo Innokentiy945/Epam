@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class ComboStringTest {
 
-    ComboString comboString = new ComboString();
+    private ComboString comboString = new ComboString();
 
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
@@ -17,7 +17,7 @@ public class ComboStringTest {
 
 
         //When
-        boolean expected = false;
+        String expected = null;
         String actual = comboString.comboString(a,b);
 
         //Then
@@ -39,7 +39,7 @@ public class ComboStringTest {
     }
 
     @Test
-    public void shouldReturnRightResusltAB2(){
+    public void shouldReturnRightResultAB2(){
         //Given
         String a = "bb";
         String b = "a";
@@ -52,7 +52,7 @@ public class ComboStringTest {
         assertNotEquals(expected, actual);
     }
     @Test
-    public void shouldReturnRightResuslt3(){
+    public void shouldNotReturnExpectedResult(){
         //Given
         String a = "bb";
         String b = "a";
