@@ -10,21 +10,21 @@ public class MakePiTest {
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
         //When
-        boolean expected = false;
+        int expected = 0;
         int[] actual = makePi.makePi();
 
         //Then
-        assertTrue(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void shouldReturnOutOfBoundsException() {
         //When
-        boolean expected = false;
+        int expected = 0;
         int[] actual = makePi.makePi();
 
         //Then
-        assertTrue(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
