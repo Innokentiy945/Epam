@@ -13,11 +13,11 @@ public class CountEvensTest {
         int[] nums = null;
 
         //When
-        boolean expected = false;
+        int expected = 0;
         int actual = countEvens.countEvens(nums);
 
         //Then
-        assertTrue(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -26,11 +26,11 @@ public class CountEvensTest {
         int[] nums = {};
 
         //When
-        boolean expected = false;
+        int expected = 0;
         int actual = countEvens.countEvens(nums);
 
         //Then
-        assertTrue(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
