@@ -8,7 +8,7 @@ public class MiddleWayTest {
     MiddleWay middleWay = new MiddleWay();
 
     @Test(expected = NullPointerException.class)
-    public void ShouldReturnNullPointerExceptionWhenNull() {
+    public void shouldReturnNullPointerExceptionWhenNull() {
         //Given
         int[] a = null;
         int[] b = null;
@@ -22,7 +22,7 @@ public class MiddleWayTest {
     }
 
     @Test
-    public void ShouldReturnRightLengthOfArrays() {
+    public void shouldReturnRightLengthOfArrays() {
         //Given
         int[] a = {1, 2, 3};
         int[] b = {1, 2, 3};
@@ -38,7 +38,7 @@ public class MiddleWayTest {
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void ShouldReturnRightCount() {
+    public void shouldReturnRightCount() {
         //Given
         int[] a = {1, 2, 3};
         int[] b = {6, 7, 8};
