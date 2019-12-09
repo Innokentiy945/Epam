@@ -8,7 +8,7 @@ public class CountHiTest {
     CountHi countHi = new CountHi();
 
     @Test(expected = NullPointerException.class)
-    public void ShouldReturnNullPointerExceptionWhenNull() {
+    public void shouldReturnNullPointerExceptionWhenNull() {
 
         //Given
         String str = null;
@@ -22,7 +22,7 @@ public class CountHiTest {
     }
 
     @Test(expected = StringIndexOutOfBoundsException.class)
-    public void ShouldReturnOutOfBoundsException() {
+    public void shouldReturnOutOfBoundsException() {
         //Given
         String str = "hihi";
 
@@ -35,7 +35,7 @@ public class CountHiTest {
     }
 
     @Test
-    public void ShouldReturnZeroHi() {
+    public void shouldReturnZeroHi() {
         //Given
         String str = "";
 
