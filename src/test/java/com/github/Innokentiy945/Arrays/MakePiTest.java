@@ -8,7 +8,7 @@ public class MakePiTest {
     MakePi makePi = new MakePi();
 
     @Test(expected = NullPointerException.class)
-    public void ShouldReturnNullPointerExceptionWhenNull() {
+    public void shouldReturnNullPointerExceptionWhenNull() {
         //When
         boolean expected = false;
         int[] actual = makePi.makePi();
@@ -18,7 +18,7 @@ public class MakePiTest {
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void ShouldReturnOutOfBoundsException() {
+    public void shouldReturnOutOfBoundsException() {
         //When
         boolean expected = false;
         int[] actual = makePi.makePi();
@@ -28,7 +28,7 @@ public class MakePiTest {
     }
 
     @Test
-    public void ShouldReturnRightCount() {
+    public void shouldReturnRightCount() {
         //Given
         int[] arr = {3,1,4};
 
