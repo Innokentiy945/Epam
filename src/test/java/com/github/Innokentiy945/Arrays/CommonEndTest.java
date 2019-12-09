@@ -18,7 +18,7 @@ public class CommonEndTest {
         boolean actual = commonEnd.CommonEnd(a,b);
 
         //Then
-        assertTrue(expected, actual);
+        assertTrue(String.valueOf(expected), actual);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -32,7 +32,7 @@ public class CommonEndTest {
         boolean expected = false;
 
         //Then
-        assertFalse(actual, expected);
+        assertFalse(String.valueOf(actual), expected);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class CommonEndTest {
         boolean expected = a[0] == b[0];
 
         //Then
-        assertTrue(actual, expected);
+        assertTrue(String.valueOf(actual), expected);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class CommonEndTest {
         boolean expected = false;
 
         //Then
-        assertTrue(actual, expected);
+        assertTrue(String.valueOf(actual), expected);
     }
 
 
