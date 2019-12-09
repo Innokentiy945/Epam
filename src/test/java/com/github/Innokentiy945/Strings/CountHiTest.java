@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CountHiTest {
-    CountHi countHi = new CountHi();
+    private CountHi countHi = new CountHi();
 
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
@@ -14,7 +14,7 @@ public class CountHiTest {
         String str = null;
 
         //When
-        boolean expected = false;
+        int expected = 0;
         int actual = countHi.countHi(str);
 
         //Then
