@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MiddleWayTest {
-    MiddleWay middleWay = new MiddleWay();
+    private MiddleWay middleWay = new MiddleWay();
 
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
@@ -18,7 +18,7 @@ public class MiddleWayTest {
         int[] actual = middleWay.middleWay(a,b);
 
         //Then
-        assertEquals(expected, actual);
+        assertTrue(expected, actual);
     }
 
     @Test
@@ -50,8 +50,8 @@ public class MiddleWayTest {
         boolean expected1 = arr[1] == b[(b.length) / 3];
 
         //Then
-        assertNotEquals(actual, expected);
-        assertNotEquals(actual, expected1);
+        assertFalse(actual, expected);
+        assertFalse(actual, expected1);
     }
 
 
