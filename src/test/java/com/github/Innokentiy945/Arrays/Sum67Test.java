@@ -8,7 +8,7 @@ public class Sum67Test {
     Sum67 sum67 = new Sum67();
 
     @Test(expected = NullPointerException.class)
-    public void ShouldReturnNullPointerExceptionWhenNull() {
+    public void shouldReturnNullPointerExceptionWhenNull() {
         //Given
         int[] nums = null;
 
@@ -21,7 +21,7 @@ public class Sum67Test {
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void ShouldReturnOutOfBoundsException() {
+    public void shouldReturnOutOfBoundsException() {
         //Given
         int[] nums = {};
 
@@ -34,7 +34,7 @@ public class Sum67Test {
     }
 
     @Test
-    public void ShouldReturnRightCount1() {
+    public void shouldReturnRightCount1() {
         //Given
         int[] nums = {8, 4, 1, 5, 9, 7};
 
@@ -47,7 +47,7 @@ public class Sum67Test {
     }
 
     @Test
-    public void ShouldReturnRightCount2() {
+    public void shouldReturnRightCount2() {
         //Given
         int[] nums = {6, 7, 9};
 
