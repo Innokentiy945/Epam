@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Sum67Test {
-    Sum67 sum67 = new Sum67();
+    private Sum67 sum67 = new Sum67();
 
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
@@ -13,7 +13,7 @@ public class Sum67Test {
         int[] nums = null;
 
         //When
-        boolean expected = false;
+        int expected = 0;
         int actual = sum67.sum67(nums);
 
         //Then
