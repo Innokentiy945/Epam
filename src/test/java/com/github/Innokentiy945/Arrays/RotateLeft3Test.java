@@ -8,7 +8,7 @@ public class RotateLeft3Test {
     RotateLeft3 rotateLeft3 = new RotateLeft3();
 
     @Test(expected = NullPointerException.class)
-    public void ShouldReturnNullPointerExceptionWhenNull() {
+    public void shouldReturnNullPointerExceptionWhenNull() {
         //Given
         int[] nums = null;
 
@@ -22,7 +22,7 @@ public class RotateLeft3Test {
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void ShouldReturnOutOfBoundsException() {
+    public void shouldReturnOutOfBoundsException() {
         //Given
         int[] nums = {1, 2, 3};
         int[] arr = {};
@@ -40,7 +40,7 @@ public class RotateLeft3Test {
     }
 
     @Test
-    public void ShouldReturnFalseIfStartingConditionsRight() {
+    public void shouldReturnFalseIfStartingConditionsRight() {
         //Given
         int[] nums = {1, 2, 3};
         int[] arr =  new int[3];
