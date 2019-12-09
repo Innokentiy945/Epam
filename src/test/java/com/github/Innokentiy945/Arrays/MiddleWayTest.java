@@ -14,11 +14,11 @@ public class MiddleWayTest {
         int[] b = null;
 
         //When
-        boolean expected = false;
+        int expected = 0;
         int[] actual = middleWay.middleWay(a,b);
 
         //Then
-        assertTrue(expected, actual);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -42,16 +42,16 @@ public class MiddleWayTest {
         //Given
         int[] a = {1, 2, 3};
         int[] b = {6, 7, 8};
-        int[] arr = {};
 
         //When
         int[] actual = middleWay.middleWay(a,b);
-        boolean expected = arr[0] == a[(a.length) / 3];
-        boolean expected1 = arr[1] == b[(b.length) / 3];
+        int expected = a.length-1;
+        int expected1 = b.length-1;
+
 
         //Then
-        assertFalse(actual, expected);
-        assertFalse(actual, expected1);
+        assertEquals(actual, expected);
+        assertEquals(actual, expected1);
     }
 
 
