@@ -9,7 +9,7 @@ public class ComboStringTest {
     ComboString comboString = new ComboString();
 
     @Test(expected = NullPointerException.class)
-    public void ShouldReturnNullPointerExceptionWhenNull() {
+    public void shouldReturnNullPointerExceptionWhenNull() {
 
         //Given
         String a = null;
@@ -25,7 +25,7 @@ public class ComboStringTest {
     }
 
     @Test
-    public void ShouldReturnRightResusltAB1(){
+    public void shouldReturnRightResusltAB1(){
         //Given
         String a = "bb";
         String b = "a";
@@ -39,7 +39,7 @@ public class ComboStringTest {
     }
 
     @Test
-    public void ShouldReturnRightResusltAB2(){
+    public void shouldReturnRightResusltAB2(){
         //Given
         String a = "bb";
         String b = "a";
@@ -52,7 +52,7 @@ public class ComboStringTest {
         assertNotEquals(expected, actual);
     }
     @Test
-    public void ShouldReturnRightResuslt3(){
+    public void shouldReturnRightResuslt3(){
         //Given
         String a = "bb";
         String b = "a";
