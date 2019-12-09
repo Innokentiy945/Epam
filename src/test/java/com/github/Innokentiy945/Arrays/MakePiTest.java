@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MakePiTest {
-    MakePi makePi = new MakePi();
+    private MakePi makePi = new MakePi();
 
     @Test(expected = NullPointerException.class)
     public void shouldReturnNullPointerExceptionWhenNull() {
@@ -14,7 +14,7 @@ public class MakePiTest {
         int[] actual = makePi.makePi();
 
         //Then
-        assertEquals(expected, actual);
+        assertTrue(expected, actual);
     }
 
     @Test(expected = ArrayIndexOutOfBoundsException.class)
@@ -24,7 +24,7 @@ public class MakePiTest {
         int[] actual = makePi.makePi();
 
         //Then
-        assertEquals(expected, actual);
+        assertTrue(expected, actual);
     }
 
     @Test
