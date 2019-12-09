@@ -22,7 +22,7 @@ public class FirstTwoTest {
     }
 
     @Test(expected = StringIndexOutOfBoundsException.class)
-    public void ShouldReturnOutOfBoundsException() {
+    public void shouldReturnOutOfBoundsException() {
         //Given
         String str = "Apple";
 
@@ -35,7 +35,7 @@ public class FirstTwoTest {
     }
 
     @Test
-    public void ShouldReturnRightChar1() {
+    public void shouldReturnRightChar1() {
         //Given
         String str = "Apple";
 
@@ -48,7 +48,7 @@ public class FirstTwoTest {
     }
 
     @Test
-    public void ShouldReturnRightChar2(){
+    public void shouldReturnRightChar2(){
         //Given
         String str = "eeeee";
 
