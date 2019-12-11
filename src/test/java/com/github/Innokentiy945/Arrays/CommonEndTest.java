@@ -60,7 +60,7 @@ public class CommonEndTest {
         boolean expected = false;
 
         //Then
-        assertTrue(String.valueOf(actual), expected);
+        assertFalse(String.valueOf(actual), expected);
     }
 
 
