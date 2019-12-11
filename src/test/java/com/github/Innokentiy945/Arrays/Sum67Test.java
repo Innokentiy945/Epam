@@ -43,7 +43,7 @@ public class Sum67Test {
         int actual = sum67.sum67(nums);
 
         //Then
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
     }
 
     @Test
@@ -56,6 +56,6 @@ public class Sum67Test {
         int actual = sum67.sum67(nums);
 
         //Then
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
     }
 }
