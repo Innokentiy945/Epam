@@ -40,8 +40,8 @@ public class MiddleWayTest {
     @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void shouldReturnRightCount() {
         //Given
-        int[] a = {1, 2, 3};
-        int[] b = {6, 7, 8};
+        int[] a = {};
+        int[] b = {};
 
         //When
         int[] actual = middleWay.middleWay(a,b);
@@ -50,8 +50,8 @@ public class MiddleWayTest {
 
 
         //Then
-        assertEquals(actual, expected);
-        assertEquals(actual, expected1);
+        assertNotEquals(actual, expected);
+        assertNotEquals(actual, expected1);
     }
 
 
