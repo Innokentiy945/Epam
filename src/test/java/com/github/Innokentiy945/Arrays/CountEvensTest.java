@@ -20,19 +20,6 @@ public class CountEvensTest {
         assertEquals(expected, actual);
     }
 
-    @Test(expected = ArrayIndexOutOfBoundsException.class)
-    public void shouldReturnOutOfBoundsException() {
-        //Given
-        int[] nums = {};
-
-        //When
-        int expected = 0;
-        int actual = countEvens.countEvens(nums);
-
-        //Then
-        assertEquals(expected, actual);
-    }
-
     @Test
     public void shouldReturnRightResult1() {
         //Given
